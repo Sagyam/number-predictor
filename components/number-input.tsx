@@ -17,8 +17,8 @@ export const NumberInput: React.FC<NumberInputProps> = ({
     <Input
       type="number"
       value={value}
-      min={0}
-      max={100}
+      min={0.0}
+      max={99}
       step={0.01}
       onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
         const num = parseFloat(e.target.value);
@@ -27,7 +27,7 @@ export const NumberInput: React.FC<NumberInputProps> = ({
         }
       }}
       placeholder={placeholder}
-      className="w-full"
+      className="w-full input-xl"
     />
   );
 };

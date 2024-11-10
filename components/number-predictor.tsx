@@ -70,7 +70,7 @@ export default function NumberPredictor(): JSX.Element {
           <CardTitle>Number Predictor</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-5 gap-4 mb-6">
+          <div className="grid grid-cols-2 gap-4 mb-6">
             <AnimatePresence>
               {numbers.map((num, index) => (
                 <motion.div
